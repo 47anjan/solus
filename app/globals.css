@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #022c22;
 }
 
 @theme inline {
@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
   --color-cream: #fdf8f3;
   --color-beige: #fef3e6;
-  --color-dark: #022c22;
+  --color-black: #022c22;
   --color-green: #0f5132;
   --color-orange: #f59e0b;
   --color-pink: #fbcfe8;
