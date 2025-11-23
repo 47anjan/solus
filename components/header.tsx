@@ -95,7 +95,12 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div className="fixed inset-0 bg-cream z-40 flex flex-col items-center justify-center md:hidden overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="fixed inset-0 bg-cream z-40 flex flex-col items-center justify-center md:hidden overflow-hidden"
+          >
             {/* Decorative Elements */}
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
