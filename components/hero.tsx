@@ -67,14 +67,14 @@ const Hero = () => (
         <AbstractShapes className="w-32 h-32" />
       </motion.div>
 
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative z-10 text-4xl sm:text-5xl md:text-6xl lg:text-[70px] font-serif font-medium text-dark mb-6 leading-tight max-w-4xl"
       >
         Support for Your <br /> Mental Well-being
-      </motion.h1>
+      </motion.h2>
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}

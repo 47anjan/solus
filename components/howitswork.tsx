@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { Button } from "./UI";
-import { fadeInUp } from "@/lib/animatoins";
+import Heading from "./heading";
+import Description from "./description";
 
 const HowItWorks = () => (
   <section className="px-4 sm:px-8 py-16 sm:py-24 max-w-7xl mx-auto">
@@ -25,39 +26,14 @@ const HowItWorks = () => (
         >
           HOW IT WORKS
         </motion.p>
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 40 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.6, ease: "easeOut", delay: 0.3 },
-            },
-          }}
-          className="text-4xl sm:text-5xl lg:text-[52px] font-serif font-bold text-dark mb-6 sm:mb-8 leading-tight"
-        >
+
+        <Heading>
           We Help You <br /> Prioritize Your <br /> Mental Health
-        </motion.h2>
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 40 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.6, ease: "easeOut", delay: 0.4 },
-            },
-          }}
-          className="text-dark-green text-base sm:text-lg md:text-xl mb-7 sm:mb-9 max-w-md leading-relaxed"
-        >
+        </Heading>
+        <Description>
           Browse therapists, book a session, and start your healing journey with
           trusted professionals.
-        </motion.p>
+        </Description>
         <motion.div
           initial="hidden"
           whileInView="visible"
