@@ -28,7 +28,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${merriweather.variable} antialiased`}
       >
-        {children}
+        <main className="min-h-screen selection:bg-green selection:text-white">
+          {children}
+        </main>
       </body>
     </html>
   );

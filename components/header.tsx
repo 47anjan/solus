@@ -89,7 +89,27 @@ const Header = () => {
         className="md:hidden text-solus-dark relative z-50 p-2 rounded-full hover:bg-stone-100 transition-colors"
         aria-label="Toggle Menu"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        <AnimatePresence>
+          {isOpen ? (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0 }}
+            >
+              <X size={24} />
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0 }}
+            >
+              <Menu size={24} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </button>
 
       {/* Mobile Menu Overlay */}
@@ -99,6 +119,7 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
+            exit={{ opacity: 0 }}
             className="fixed inset-0 bg-cream z-40 flex flex-col items-center justify-center md:hidden overflow-hidden"
           >
             {/* Decorative Elements */}
