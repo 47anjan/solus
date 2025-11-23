@@ -65,16 +65,16 @@ export const Button: React.FC<{
   className?: string;
 }> = ({ variant = "primary", children, className = "" }) => {
   const base =
-    "px-6 py-2.5 rounded-full text-sm font-medium inline-block cursor-pointer";
+    "px-8 sm:px-[39px] py-3 sm:py-[15px] rounded-full text-base sm:text-lg font-medium inline-block cursor-pointer";
   const styles = {
-    primary: "bg-black text-white",
+    primary:
+      "bg-black text-white hover:bg-transparent hover:outline hover:outline-black hover:text-black duration-300 transition-colors",
     outline:
       "border border-stone-300 text-stone-800 hover:border-dark hover:text-dark",
     light: "bg-white text-dark shadow-sm",
   };
   return (
     <motion.button
-      whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={`${base} ${styles[variant]} ${className}`}
     >

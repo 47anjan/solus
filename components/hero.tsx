@@ -80,7 +80,7 @@ const Hero = () => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="relative z-10 text-dark-green text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
+        className="relative z-10  text-dark-green text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
       >
         Connect with licensed therapists, counselors, and wellness coaches to
         support your journey.
