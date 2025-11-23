@@ -10,10 +10,10 @@ export const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 }) => (
   <a
     href={href}
-    className="text-sm font-medium text-stone-600 hover:text-black transition-colors relative group font-sans"
+    className="text-sm font-medium text-stone-600 hover:text-dark transition-colors relative group font-sans"
   >
     {children}
-    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all group-hover:w-full"></span>
+    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dark transition-all group-hover:w-full"></span>
   </a>
 );
 
@@ -157,7 +157,7 @@ const Header = () => {
               ))}
               <motion.div variants={linkVariants} className="pt-8">
                 <button
-                  className="bg-black text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg cursor-pointer hover:bg-green"
+                  className="bg-dark text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg cursor-pointer hover:bg-green"
                   onClick={() => setIsOpen(false)}
                 >
                   Get Started

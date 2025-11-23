@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animatoins";
@@ -68,7 +70,7 @@ export const Button: React.FC<{
     "px-8 sm:px-[39px] py-3 sm:py-[15px] rounded-full text-base sm:text-lg font-medium inline-block cursor-pointer";
   const styles = {
     primary:
-      "bg-black text-white hover:bg-transparent hover:outline hover:outline-black hover:text-black duration-300 transition-colors",
+      "bg-dark text-white hover:bg-transparent hover:outline hover:outline-black hover:text-dark duration-300 transition-colors",
     outline:
       "border border-stone-300 text-stone-800 hover:border-dark hover:text-dark",
     light: "bg-white text-dark shadow-sm",
