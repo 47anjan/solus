@@ -22,7 +22,7 @@ const SectionLabel = ({ children, className }: Props) => {
         },
       }}
       className={cn(
-        "text-xs font-bold tracking-widest text-green uppercase mb-7 sm:mb-9",
+        "text-xs font-bold uppercase tracking-widest text-green mb-6 sm:mb-8",
         className
       )}
     >

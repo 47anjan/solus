@@ -22,7 +22,7 @@ const Description = ({ children, className }: Props) => {
         },
       }}
       className={cn(
-        "text-dark-green text-base sm:text-lg md:text-xl mb-7 sm:mb-9 max-w-md leading-relaxed",
+        "text-dark-green text-base md:text-lg  mb-7 sm:mb-9 max-w-md leading-relaxed",
         className
       )}
     >

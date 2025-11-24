@@ -23,7 +23,7 @@ const Heading = ({ children, className }: Props) => {
         },
       }}
       className={cn(
-        "relative z-10 text-4xl sm:text-5xl md:text-6xl lg:text-[70px] font-serif font-medium text-dark mb-6 leading-tight max-w-4xl",
+        "relative z-10 text-3xl sm:text-4xl md:text-5xl  font-serif font-medium text-dark mb-6 leading-tight max-w-4xl",
         className
       )}
     >

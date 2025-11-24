@@ -6,28 +6,14 @@ import { Button } from "./UI";
 import Heading from "./heading";
 import Description from "./description";
 import Container from "./container";
+import SectionLabel from "./sectionlabel";
 
 const HowItWorks = () => (
   <section className="py-16 sm:py-24 ">
     <Container>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: 40 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.6, ease: "easeOut", delay: 0.2 },
-              },
-            }}
-            className="text-xs font-bold tracking-widest text-green uppercase mb-7 sm:mb-9"
-          >
-            HOW IT WORKS
-          </motion.p>
+          <SectionLabel>HOW IT WORKS</SectionLabel>
 
           <Heading>
             We Help You <br /> Prioritize Your <br /> Mental Health

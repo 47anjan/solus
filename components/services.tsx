@@ -12,12 +12,10 @@ import Image from "next/image";
 const Services = () => (
   <section className=" py-16 sm:py-24 bg-white">
     <Container>
-      <header className="flex flex-col text-center items-center justify-cente mb-16 md:mb-20">
+      <header className="flex flex-col text-center items-center justify-center mb-16 md:mb-20">
         <SectionLabel className="mb-5 sm:mb-5">SERVICES</SectionLabel>
-        <Heading className="mb-5 sm:mb-5">
-          Your Path to <br /> Well-being
-        </Heading>
-        <Description className=" max-w-[476px] mb-0 sm:mb-0">
+        <Heading className="mb-5 sm:mb-5">Your Path to Well-being</Heading>
+        <Description className=" max-w-2xl mb-0 sm:mb-0">
           Discover expert guidance for a healthier mind and balanced life.
         </Description>
       </header>
@@ -34,7 +32,7 @@ const Services = () => (
           className=" flex flex-col gap-8 px-[60px] pt-16 md:pt-[75px] pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm bg-[#F9E6D0] isolate"
           variants={fadeInUp}
         >
-          <h3 className="text-4xl md:text-5xl leading-snug font-semibold">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl leading-snug font-semibold">
             Mindfulness & <br /> Meditation
           </h3>
           <p className="text-lg max-w-[295px]">
@@ -58,7 +56,7 @@ const Services = () => (
           className="px-[60px] flex flex-col gap-8 pt-16 md:pt-[75px] pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm  isolate"
           variants={fadeInUp}
         >
-          <h3 className="text-4xl md:text-5xl leading-snug font-semibold">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl leading-snug font-semibold">
             One-on-One <br /> Therapy
           </h3>
           <p className="text-lg max-w-[295px]">
@@ -81,11 +79,11 @@ const Services = () => (
           Wellness Coaching
         </h3>
         <div className="space-y-6 text-dark-green">
-          <p className="text-lg sm:text-xl max-w-[617px]">
+          <p className="text-lg  max-w-[617px]">
             Personalized guidance to help you build healthier habits, manage
             stress, and achieve balance in all areas of your life.
           </p>
-          <p className="text-lg sm:text-xl max-w-[617px]">
+          <p className="text-lg  max-w-[617px]">
             Our wellness coaches support you in creating sustainable routines
             for mental, emotional, and physical well-being.
           </p>
