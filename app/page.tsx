@@ -1,3 +1,4 @@
+import Community from "@/components/community";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/howitswork";
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <Partners />
       <Resources />
+      <Community />
     </div>
   );
 }

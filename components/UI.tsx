@@ -51,7 +51,7 @@ export const Button: React.FC<{
   className?: string;
 }> = ({ variant = "primary", children, className = "" }) => {
   const base =
-    "px-8 sm:px-[39px] py-3 sm:py-[15px] rounded-full text-base sm:text-lg font-medium inline-block cursor-pointer";
+    "px-8 sm:px-[39px] h-11 sm:h-[52px] flex item-center justify-center rounded-full text-base sm:text-lg font-medium inline-block cursor-pointer";
   const styles = {
     primary:
       "bg-dark text-white hover:bg-transparent hover:outline hover:outline-black hover:text-dark duration-300 transition-colors",
