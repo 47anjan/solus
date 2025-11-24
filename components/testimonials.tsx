@@ -1,11 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft } from "lucide-react";
-import Heading from "./heading";
-import SectionLabel from "./sectionlabel";
-import Description from "./description";
 
 const testimonials = [
   {
@@ -64,7 +61,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="px-4 sm:px-8 py-16 lg:py-24  overflow-hidden">
+    <section className="px-4 sm:px-8 py-16 md:py-24  overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-10">
           <motion.div className="lg:w-1/3">

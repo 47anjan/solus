@@ -72,7 +72,7 @@ const Header = () => {
       </div>
 
       {/* Logo - Visible on Mobile & Desktop */}
-      <motion.div className="text-2xl sm:text-3xl font-serif font-bold text-solus-dark tracking-tight cursor-pointer relative z-50">
+      <motion.div className="text-2xl sm:text-3xl font-serif font-bold text-dark tracking-tight cursor-pointer relative z-50">
         Solus
       </motion.div>
 
@@ -86,7 +86,7 @@ const Header = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden text-solus-dark relative z-50 p-2 rounded-full hover:bg-stone-100 transition-colors"
+        className="md:hidden text-dark relative z-50 p-2 rounded-full hover:bg-stone-100 transition-colors"
         aria-label="Toggle Menu"
       >
         <AnimatePresence>
@@ -150,7 +150,7 @@ const Header = () => {
                   whileHover={{ scale: 1.09 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setIsOpen(false)}
-                  className="text-3xl font-serif font-medium text-solus-dark hover:text-solus-green transition-colors"
+                  className="text-3xl font-serif font-medium text-dark hover:text-green transition-colors"
                 >
                   {link}
                 </motion.a>

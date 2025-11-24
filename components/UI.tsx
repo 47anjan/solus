@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/lib/animatoins";
 
 // --- SVG Illustrations ---
 export const AbstractFace = ({ className }: { className?: string }) => (
@@ -46,21 +45,6 @@ export const AbstractShapes = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// --- Shared Components ---
-
-export const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
-  href,
-  children,
-}) => (
-  <a
-    href={href}
-    className="text-sm font-medium text-stone-600 hover:text-dark transition-colors relative group"
-  >
-    {children}
-    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dark transition-all group-hover:w-full"></span>
-  </a>
-);
-
 export const Button: React.FC<{
   variant?: "primary" | "outline" | "light";
   children: React.ReactNode;
@@ -84,28 +68,3 @@ export const Button: React.FC<{
     </motion.button>
   );
 };
-
-export const SectionHeading: React.FC<{
-  title: string;
-  subtitle?: string;
-  align?: "left" | "center";
-}> = ({ title, subtitle, align = "left" }) => (
-  <motion.div
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.5 }}
-    variants={fadeInUp}
-    className={`mb-8 sm:mb-12 ${
-      align === "center" ? "text-center" : "text-left"
-    }`}
-  >
-    {subtitle && (
-      <p className="text-xs font-bold tracking-widest text-stone-500 uppercase mb-3">
-        {subtitle}
-      </p>
-    )}
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium text-dark leading-tight">
-      {title}
-    </h2>
-  </motion.div>
-);

@@ -14,8 +14,8 @@ const Services = () => (
     <Container>
       <header className="flex flex-col text-center items-center justify-center mb-16 md:mb-20">
         <SectionLabel className="mb-5 sm:mb-5">SERVICES</SectionLabel>
-        <Heading className="mb-5 sm:mb-5">Your Path to Well-being</Heading>
-        <Description className=" max-w-2xl mb-0 sm:mb-0">
+        <Heading className="mb-2 sm:mb-2">Your Path to Well-being</Heading>
+        <Description className=" max-w-[440px] mb-0 sm:mb-0">
           Discover expert guidance for a healthier mind and balanced life.
         </Description>
       </header>
