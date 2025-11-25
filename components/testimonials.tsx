@@ -49,7 +49,6 @@ const Testimonials = () => {
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const container = scrollRef.current;
-      // Calculate width of a card + gap. Default gap-6 is 24px.
       const card = container.firstElementChild as HTMLElement;
       const scrollAmount = card ? card.offsetWidth + 24 : 424;
 
@@ -61,7 +60,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="px-4 sm:px-8 py-16 md:py-20  overflow-hidden">
+    <section className="px-4 sm:px-8 py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-10">
           <motion.div className="lg:w-1/3">
@@ -98,8 +97,8 @@ const Testimonials = () => {
             {testimonials.map((t, index) => (
               <motion.div
                 key={t.id}
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
                 className={`min-w-[300px] md:min-w-[400px] ${t.bgColor} p-8 md:p-10 rounded-4xl flex flex-col justify-between shadow-sm  transition-shadow duration-300 snap-start`}
