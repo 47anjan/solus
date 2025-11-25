@@ -5,7 +5,7 @@ import { Button, AbstractFace, AbstractShapes } from "./UI";
 import { floatAnimation } from "@/lib/animatoins";
 
 const Hero = () => (
-  <section className="px-4 sm:px-8 py-4 max-w-7xl mx-auto">
+  <section className="px-4 sm:px-8 py-4 max-w-7xl mx-auto  pt-20">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
