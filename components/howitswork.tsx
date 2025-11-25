@@ -41,8 +41,8 @@ const HowItWorks = () => (
 
         <div className="relative">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8 }}
             className="bg-dark overflow-hidden  rounded-[60px] px-12 sm:px-16 pt-16 sm:pt-[70px]"

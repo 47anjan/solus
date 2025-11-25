@@ -1,4 +1,5 @@
 import Community from "@/components/community";
+import Contact from "@/components/contact";
 import FAQ from "@/components/faq";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -20,6 +21,7 @@ export default function Home() {
       <Resources />
       <Community />
       <FAQ />
+      <Contact />
     </div>
   );
 }
