@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
+import { siteMetadata } from "./metadata";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -13,10 +14,7 @@ const merriweather = Merriweather({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-export const metadata: Metadata = {
-  title: "Solus | Support for Your Mental Well-being",
-  description: "Support for Your Mental Well-being",
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,
