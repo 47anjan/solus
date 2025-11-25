@@ -1,3 +1,4 @@
+import AiAssistant from "@/components/aiassistant";
 import Community from "@/components/community";
 import Contact from "@/components/contact";
 import FAQ from "@/components/faq";
@@ -24,6 +25,7 @@ export default function Home() {
       <FAQ />
       <Contact />
       <Footer />
+      <AiAssistant />
     </div>
   );
 }
