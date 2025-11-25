@@ -29,7 +29,7 @@ const Services = () => (
       >
         {/* Card 1 */}
         <motion.article
-          className=" flex flex-col gap-8 px-[60px] pt-16 md:pt-[75px] pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm bg-[#F9E6D0] isolate"
+          className=" flex flex-col gap-8 px-10 sm:px-[60px] pt-10 sm:pt-16 md:pt-[75px] pb-10 sm:pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm bg-[#F9E6D0] isolate"
           variants={fadeInUp}
         >
           <h3 className="text-3xl sm:text-4xl md:text-5xl leading-snug font-semibold">
@@ -53,7 +53,7 @@ const Services = () => (
 
         {/* Card 2 */}
         <motion.article
-          className="px-[60px] flex flex-col gap-8 pt-16 md:pt-[75px] pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm  isolate"
+          className="px-10 sm:px-[60px] flex flex-col gap-8 pt-10 sm:pt-16 md:pt-[75px] pb-10 sm:pb-16 md:pb-20 rounded-[60px] relative overflow-hidden shadow-sm  isolate"
           variants={fadeInUp}
         >
           <h3 className="text-3xl sm:text-4xl md:text-5xl leading-snug font-semibold">
@@ -74,8 +74,8 @@ const Services = () => (
         </motion.article>
       </motion.div>
 
-      <article className="px-[60px] pt-16 md:pt-[75px] pb-16 md:pb-[78px] rounded-[60px] relative overflow-hidden shadow-sm flex flex-col gap-6 sm:gap-8 isolate">
-        <h3 className="text-4xl md:text-5xl leading-snug font-semibold">
+      <article className="px-10 sm:px-[60px] pt-10 sm:pt-16 md:pt-[75px] pb-10 sm:pb-16 md:pb-[78px] rounded-[60px] relative overflow-hidden shadow-sm flex flex-col gap-6 sm:gap-8 isolate">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl leading-snug font-semibold">
           Wellness Coaching
         </h3>
         <div className="space-y-6 text-dark-green">
@@ -88,7 +88,7 @@ const Services = () => (
             for mental, emotional, and physical well-being.
           </p>
         </div>
-        <button className=" text-lg sm:text-xl w-fit font-semibold px-8 h-[52px] flex items-center justify-center text-white bg-dark border-dark hover:bg-transparent hover:text-dark border rounded-full cursor-pointer transition-colors duration-300">
+        <button className=" sm:text-lg md:text-xl w-fit font-semibold px-8 h-[52px] flex items-center justify-center text-white bg-dark border-dark hover:bg-transparent hover:text-dark border rounded-full cursor-pointer transition-colors duration-300">
           Learn more
         </button>
         <motion.div

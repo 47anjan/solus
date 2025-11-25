@@ -8,7 +8,7 @@ import Description from "./description";
 import Link from "next/link";
 
 const Contact = () => (
-  <section className="px-4 sm:px-8 py-16 sm:py-20 bg-white">
+  <section className="px-4 sm:px-8 pt-16 sm:pt-20">
     <header className="flex flex-col text-center items-center justify-center mb-16 md:mb-20">
       <SectionLabel className="mb-5 sm:mb-5"> GET IN TOUCH</SectionLabel>
       <Heading className="mb-2 sm:mb-2">
@@ -26,7 +26,7 @@ const Contact = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="max-w-6xl mx-auto bg-cream rounded-[3rem] p-8 md:p-16"
+      className="max-w-7xl mx-auto bg-white rounded-[3rem] p-8 md:p-16"
     >
       <div className="flex flex-col md:flex-row gap-12">
         <div className="md:w-1/2 space-y-8">
@@ -66,7 +66,7 @@ const Contact = () => (
           <h3 className="text-2xl font-serif font-medium text-dark mb-8">
             Send Us a Message
           </h3>
-          <form className="space-y-6">
+          <form className="space-y-6 ">
             <div className="bg-[#F7EFE7] px-4 py-3 rounded-lg border-b-3 border-stone-300 focus-within:border-dark transition">
               <label className="block text-xs font-bold text-stone-500 mb-1">
                 Email

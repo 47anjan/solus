@@ -3,18 +3,19 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
   href,
   children,
 }) => (
-  <a
+  <Link
     href={href}
     className="text-sm font-medium text-stone-600 hover:text-dark transition-colors relative group font-sans"
   >
     {children}
     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dark transition-all group-hover:w-full"></span>
-  </a>
+  </Link>
 );
 
 const Header = () => {
