@@ -8,6 +8,7 @@ import SectionLabel from "./sectionlabel";
 import Heading from "./heading";
 import Description from "./description";
 import Image from "next/image";
+import Container from "./container";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -44,111 +45,113 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="px-4 sm:px-8 py-16 sm:py-20 bg-solus-cream">
-      <div className="max-w-7xl lg:items-end mx-auto flex flex-col lg:flex-row gap-16">
-        <div className="lg:w-1/2">
-          <header className="mb-12">
-            <SectionLabel>NEED HELP?</SectionLabel>
-            <Heading>
-              Frequently <br /> Asked Questions
-            </Heading>
-            <Description className="mb-0 sm:mb-0">
-              Find answers to common questions about our services, therapy, and
-              mental well-being.
-            </Description>
-          </header>
-          <div className="relative isolate">
-            <Image
-              className="w-[376px] h-auto relative z-20 mx-auto"
-              src={"/happy-mind.webp"}
-              width={400}
-              height={700}
-              alt="happy mind"
-            />
-            <div className="absolute bottom-0 w-full bg-[#F9E6D0] rounded-[60px] h-[385px]"></div>
+    <section className=" py-16 sm:py-20 bg-solus-cream">
+      <Container>
+        <div className=" lg:items-end  flex flex-col lg:flex-row gap-16">
+          <div className="lg:w-1/2">
+            <header className="mb-12">
+              <SectionLabel>NEED HELP?</SectionLabel>
+              <Heading>
+                Frequently <br /> Asked Questions
+              </Heading>
+              <Description className="mb-0 sm:mb-0">
+                Find answers to common questions about our services, therapy,
+                and mental well-being.
+              </Description>
+            </header>
+            <div className="relative isolate">
+              <Image
+                className="w-[376px] h-auto relative z-20 mx-auto"
+                src={"/happy-mind.webp"}
+                width={400}
+                height={700}
+                alt="happy mind"
+              />
+              <div className="absolute bottom-0 w-full bg-[#F9E6D0] rounded-[60px] h-[385px]"></div>
+            </div>
           </div>
-        </div>
 
-        <motion.div
-          className="lg:w-2/3"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <div className="space-y-4">
-            {faqs.map((faq, idx) => {
-              const isOpen = openIndex === idx;
+          <motion.div
+            className="lg:w-2/3"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => {
+                const isOpen = openIndex === idx;
 
-              return (
-                <motion.button
-                  title="open"
-                  onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  key={idx}
-                  variants={fadeInUp}
-                  className={`rounded-2xl cursor-pointer w-full p-6 transition-all duration-300 border ${
-                    isOpen
-                      ? "bg-white border-stone-200 shadow-lg shadow-stone-100"
-                      : "bg-white border-transparent hover:border-stone-200 "
-                  }`}
-                >
-                  <article
-                    className="w-full flex justify-between items-center text-left font-medium text-stone-800 text-base sm:text-lg group"
-                    aria-expanded={isOpen}
+                return (
+                  <motion.button
+                    title="open"
+                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                    key={idx}
+                    variants={fadeInUp}
+                    className={`rounded-2xl cursor-pointer w-full p-6 transition-all duration-300 border ${
+                      isOpen
+                        ? "bg-white border-stone-200 shadow-lg shadow-stone-100"
+                        : "bg-white border-transparent hover:border-stone-200 "
+                    }`}
                   >
-                    <span
-                      className={`transition-colors duration-300 ${
-                        isOpen
-                          ? "text-stone-900"
-                          : "text-stone-600 group-hover:text-stone-900"
-                      }`}
+                    <article
+                      className="w-full flex justify-between items-center text-left font-medium text-stone-800 text-base sm:text-lg group"
+                      aria-expanded={isOpen}
                     >
-                      {faq.q}
-                    </span>
-
-                    {/* Rotatable Icon Container */}
-                    <motion.div
-                      className={`ml-4 p-2 rounded-full shrink-0 transition-colors duration-300 ${
-                        isOpen
-                          ? "bg-stone-900 text-white"
-                          : "bg-stone-100 text-stone-600 group-hover:bg-stone-200"
-                      }`}
-                      animate={{ rotate: isOpen ? 135 : 0 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 200,
-                        damping: 20,
-                      }}
-                    >
-                      {/* We only need Plus here; rotating it 45deg turns it into an X (close) */}
-                      <Plus className="w-5 h-5" strokeWidth={2} />
-                    </motion.div>
-                  </article>
-
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{
-                          duration: 0.4,
-                          ease: [0.04, 0.62, 0.23, 0.98],
-                        }}
-                        className="overflow-hidden"
+                      <span
+                        className={`transition-colors duration-300 ${
+                          isOpen
+                            ? "text-stone-900"
+                            : "text-stone-600 group-hover:text-stone-900"
+                        }`}
                       >
-                        <div className="pt-4 text-start text-stone-500 leading-relaxed max-w-[90%]">
-                          {faq.a}
-                        </div>
+                        {faq.q}
+                      </span>
+
+                      {/* Rotatable Icon Container */}
+                      <motion.div
+                        className={`ml-4 p-2 rounded-full shrink-0 transition-colors duration-300 ${
+                          isOpen
+                            ? "bg-stone-900 text-white"
+                            : "bg-stone-100 text-stone-600 group-hover:bg-stone-200"
+                        }`}
+                        animate={{ rotate: isOpen ? 135 : 0 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 200,
+                          damping: 20,
+                        }}
+                      >
+                        {/* We only need Plus here; rotating it 45deg turns it into an X (close) */}
+                        <Plus className="w-5 h-5" strokeWidth={2} />
                       </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.button>
-              );
-            })}
-          </div>
-        </motion.div>
-      </div>
+                    </article>
+
+                    <AnimatePresence initial={false}>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{
+                            duration: 0.4,
+                            ease: [0.04, 0.62, 0.23, 0.98],
+                          }}
+                          className="overflow-hidden"
+                        >
+                          <div className="pt-4 text-start text-stone-500 leading-relaxed max-w-[90%]">
+                            {faq.a}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.button>
+                );
+              })}
+            </div>
+          </motion.div>
+        </div>
+      </Container>
     </section>
   );
 };

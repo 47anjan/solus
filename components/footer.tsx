@@ -10,7 +10,7 @@ import FooterLink from "./footerlink";
 
 const Footer = () => (
   <footer className="pt-16 md:pt-20 pb-8 sm:pb-10 md:pb-16">
-    <Container className="flex sm:px-4 flex-col md:flex-row gap-12">
+    <Container className="flex  flex-col md:flex-row gap-12">
       <article className="min-h-[516px] bg-white rounded-[50px] flex flex-1 flex-col justify-between h-full pt-14 pb-10 sm:pb-14 md:pb-16  px-12 md:px-[60px]">
         <div>
           <h2 className="text-4xl font-serif font-bold mb-10 text-dark ">
