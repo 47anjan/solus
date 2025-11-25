@@ -9,7 +9,7 @@ import Container from "./container";
 import SectionLabel from "./sectionlabel";
 
 const HowItWorks = () => (
-  <section className="py-16 sm:py-24 ">
+  <section className="py-16 sm:py-20 ">
     <Container>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>

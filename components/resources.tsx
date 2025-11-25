@@ -32,7 +32,7 @@ const resourcesData = [
 ];
 
 const Resources = () => (
-  <section className=" py-16 md:py-24 max-w-7xl mx-auto text-center">
+  <section className=" py-16 md:py-20 max-w-7xl mx-auto text-center">
     <Container>
       <header className="flex flex-col text-center items-center justify-center mb-16 md:mb-20">
         <SectionLabel className="mb-5 sm:mb-5">EXPLORE & LEARN</SectionLabel>
@@ -64,7 +64,7 @@ const Resources = () => (
                 },
               },
             }}
-            className="bg-white p-10 rounded-4xl flex flex-col items-center shadow-sm hover:shadow-xl transition-all duration-300"
+            className="bg-white px-14 py-14 lg:px-[70px] lg:py-[60px] rounded-[60px] flex flex-col items-center shadow-sm hover:shadow-md transition-all duration-300"
           >
             <h3 className="text-2xl font-serif font-bold text-dark mb-3 text-center px-8">
               {item.title}

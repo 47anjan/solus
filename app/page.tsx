@@ -1,4 +1,5 @@
 import Community from "@/components/community";
+import FAQ from "@/components/faq";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/howitswork";
@@ -18,6 +19,7 @@ export default function Home() {
       <Partners />
       <Resources />
       <Community />
+      <FAQ />
     </div>
   );
 }

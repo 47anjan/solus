@@ -10,7 +10,7 @@ import Description from "./description";
 import Image from "next/image";
 
 const Services = () => (
-  <section className=" py-16 sm:py-24 bg-white">
+  <section className=" py-16 sm:py-20 bg-white">
     <Container>
       <header className="flex flex-col text-center items-center justify-center mb-16 md:mb-20">
         <SectionLabel className="mb-5 sm:mb-5">SERVICES</SectionLabel>

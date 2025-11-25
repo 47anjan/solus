@@ -41,6 +41,7 @@ const Community = () => (
             </motion.div>
           </div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ scale: 0, rotate: 0 }}
             whileInView={{ scale: 1, rotate: 12 }}
             transition={{ type: "spring", delay: 0.2 }}
@@ -49,6 +50,7 @@ const Community = () => (
             :)
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.4 }}
@@ -57,6 +59,7 @@ const Community = () => (
             <span className="text-2xl opacity-50 font-serif">~ ~ ~</span>
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.6 }}
@@ -65,6 +68,7 @@ const Community = () => (
             😊
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.8 }}
@@ -74,6 +78,7 @@ const Community = () => (
           </motion.div>
 
           <motion.div
+            viewport={{ once: true }}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.7 }}

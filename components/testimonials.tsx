@@ -61,7 +61,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="px-4 sm:px-8 py-16 md:py-24  overflow-hidden">
+    <section className="px-4 sm:px-8 py-16 md:py-20  overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-10">
           <motion.div className="lg:w-1/3">
