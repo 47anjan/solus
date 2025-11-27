@@ -45,7 +45,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className=" py-16 sm:py-20 bg-solus-cream">
+    <section className=" pt-16 pb-8 sm:py-20 bg-solus-cream">
       <Container>
         <div className=" lg:items-end  flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/2">

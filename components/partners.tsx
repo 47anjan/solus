@@ -10,7 +10,7 @@ const Partners = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className=" bg-white rounded-full py-8  sm:px-16 flex flex-wrap justify-between items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 shadow-sm  border-t border-b border-stone-100"
+        className=" bg-white rounded-full py-8 px-8 sm:px-16 flex flex-wrap md:justify-between items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 shadow-sm  border-t border-b border-stone-100 justify-center"
       >
         <span className="text-xl font-bold font-serif">Wealthsimple</span>
         <span className="text-xl font-bold font-mono flex items-center gap-1">

@@ -20,6 +20,7 @@ export const siteMetadata: Metadata = {
     "counseling services",
     "teletherapy",
     "mental wellness",
+    "ai assistant",
   ],
   authors: [{ name: "Solus" }],
   creator: "Solus",

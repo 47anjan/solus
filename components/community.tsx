@@ -8,7 +8,7 @@ import Description from "./description";
 import Container from "./container";
 
 const Community = () => (
-  <section className=" py-16">
+  <section className=" py-8 ">
     <Container>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
